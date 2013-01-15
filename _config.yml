@@ -1,0 +1,13 @@
+permalink: /:year/:month/:title 
+
+exclude: ['.git', '.gitignore', 'README.md', 'Rakefile']
+
+auto: true
+pygments: true
+
+title: More Than Nothing
+author:
+    name: Andrew January
+    email: andrewjanuary@gmail.com
+    github: ajanuary
+    twitter: ajanuary
