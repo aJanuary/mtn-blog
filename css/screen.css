@@ -1,0 +1,42 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	width: 40em;
+	margin: 2em;
+}
+
+nav ul {
+	display: table;
+	list-style: none;
+	padding: 0;
+}
+
+nav li {
+	display: table-row;
+}
+
+nav time, nav a {
+	display: table-cell;
+	padding-bottom: 0.25em;
+}
+
+nav time {
+	text-align: right;
+	white-space: nowrap;
+}
+
+nav a {
+	padding-left: 0.5em;
+}
+
+time, .subheading {
+	color: #666;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+
+.subheading {
+	margin: 0;
+	font-size: 0.9em;
+}
