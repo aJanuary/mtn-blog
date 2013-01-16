@@ -2,6 +2,8 @@ permalink: /:year/:month/:title
 
 exclude: ['.git', '.gitignore', 'README.md', 'Rakefile']
 
+paginate: 15
+
 auto: true
 pygments: true
 

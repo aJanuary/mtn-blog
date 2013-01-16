@@ -4,27 +4,32 @@ body {
 	margin: 2em;
 }
 
-nav ul {
+#posts {
 	display: table;
 	list-style: none;
 	padding: 0;
 }
 
-nav li {
+#posts li {
 	display: table-row;
 }
 
-nav time, nav a {
+#posts span {
 	display: table-cell;
 	padding-bottom: 0.25em;
+	vertical-align: top;
 }
 
-nav time {
+#posts time, #posts a {
+	display: inline-block;
+}
+
+#posts span:first-child {
 	text-align: right;
 	white-space: nowrap;
 }
 
-nav a {
+#posts a {
 	padding-left: 0.5em;
 }
 
@@ -39,4 +44,14 @@ h1 {
 .subheading {
 	margin: 0;
 	font-size: 0.9em;
+}
+
+#time {
+	padding: 0;
+	margin: 0;
+}
+
+#time li {
+	display: inline;
+	margin-right: 0.5em;
 }

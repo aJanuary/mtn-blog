@@ -6,12 +6,21 @@ layout: default
 	<h1>{{ site.title }}</h1>
 </header>
 <nav>
-	<ul>
+	<ul id="posts">
 	{% for post in paginator.posts %}
 		<li>
-			<time datetime="{{ post.date }}">{{ post.date | date: "%e %b %Y" }}</time>
-			<a href="{{ post.url }}">{{ post.title }}</a>
+			<span><time datetime="{{ post.date }}">{{ post.date | date: "%e %b %Y" }}</time></span>
+			<span><a href="{{ post.url }}">{{ post.title }}</a></span>
 		</li>
 	{% endfor %}
+	</ul>
+
+	<ul id="time">
+		{% if paginator.previous_page %}
+		<li><a href="/{% if paginator.previous_page != 1 %}page{{ paginator.previous_page }}{% endif %}">&laquo; Newer</a></li>
+		{% endif %}
+		{% if paginator.next_page %}
+		<li><a href="/page{{ paginator.next_page }}">Older &raquo;</a></li>
+		{% endif %}
 	</ul>
 </nav>
