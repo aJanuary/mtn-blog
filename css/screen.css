@@ -41,6 +41,10 @@ h1 {
 	margin-bottom: 0;
 }
 
+p {
+	text-align: justify;
+}
+
 .subheading {
 	margin: 0;
 	font-size: 0.9em;
@@ -54,4 +58,29 @@ h1 {
 #time li {
 	display: inline;
 	margin-right: 0.5em;
+}
+
+#previousnext {
+	position: relative;
+	list-style: none;
+	padding: 0;
+}
+
+#previousnext li {
+	position: absolute;
+	width: 50%;
+}
+
+#previousnext span {
+	overflow: hidden;
+	display: inline-block;
+	white-space: nowrap;
+	width: 95%;
+	text-overflow: ellipsis;
+}
+
+#next {
+	left: 50%;
+	top: 0;
+	text-align: right;
 }

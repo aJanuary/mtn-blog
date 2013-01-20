@@ -16,11 +16,11 @@ layout: default
 	</ul>
 
 	<ul id="time">
-		{% if paginator.previous_page %}
-		<li><a href="/{% if paginator.previous_page != 1 %}page{{ paginator.previous_page }}{% endif %}">&laquo; Newer</a></li>
-		{% endif %}
 		{% if paginator.next_page %}
-		<li><a href="/page{{ paginator.next_page }}">Older &raquo;</a></li>
+		<li>&laquo; <a href="/page{{ paginator.next_page }}">Older</a></li>
+		{% endif %}
+		{% if paginator.previous_page %}
+		<li><a href="/{% if paginator.previous_page != 1 %}page{{ paginator.previous_page }}{% endif %}">Newer</a> &raquo;</li>
 		{% endif %}
 	</ul>
 </nav>
