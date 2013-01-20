@@ -4,41 +4,12 @@ body {
 	margin: 2em;
 }
 
-#posts {
-	display: table;
-	list-style: none;
-	padding: 0;
-}
-
-#posts li {
-	display: table-row;
-}
-
-#posts span {
-	display: table-cell;
-	padding-bottom: 0.25em;
-	vertical-align: top;
-}
-
-#posts time, #posts a {
-	display: inline-block;
-}
-
-#posts span:first-child {
-	text-align: right;
-	white-space: nowrap;
-}
-
-#posts a {
-	padding-left: 0.5em;
+h1 {
+	font-size: 2em;
 }
 
 time, .subheading {
 	color: #666;
-}
-
-h1 {
-	margin-bottom: 0;
 }
 
 p {
@@ -83,4 +54,30 @@ p {
 	left: 50%;
 	top: 0;
 	text-align: right;
+}
+
+.summary h1 {
+	font-size: 1em;
+	display: inline-block;
+	width: 80%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin: 0;
+}
+
+.summary p {
+	margin-top: 0;
+}
+
+.summary time {
+	float: right;
+}
+
+article h1 {
+	margin-bottom: 0;
+}
+
+article header p {
+	margin-bottom: 0;
 }
