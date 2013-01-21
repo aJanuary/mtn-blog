@@ -5,11 +5,15 @@ exclude: ['.git', '.gitignore', 'README.md', 'Rakefile']
 paginate: 15
 
 auto: true
-pygments: true
+
+markdown: kramdown
+
+kramdown:
+  use_coderay: true
 
 title: More Than Nothing
 author:
-    name: Andrew January
-    email: andrewjanuary@gmail.com
-    github: ajanuary
-    twitter: ajanuary
+  name: Andrew January
+  email: andrewjanuary@gmail.com
+  github: ajanuary
+  twitter: ajanuary

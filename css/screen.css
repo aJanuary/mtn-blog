@@ -34,7 +34,7 @@ p {
 #previousnext {
 	position: relative;
 	list-style: none;
-	padding: 0;
+	padding: 0 0 1.75em 0;
 }
 
 #previousnext li {
