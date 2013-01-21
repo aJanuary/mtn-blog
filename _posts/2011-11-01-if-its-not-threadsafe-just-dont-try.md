@@ -15,6 +15,7 @@ It appeared to be working because, whenever I printed out all the keys and value
 
 After much debugging it turned out it *was* the problem. This little sample should demonstrate it:
 
+{:lang="java"}
 	import java.util.HashMap;
 	import java.util.Map;
 	import java.util.Set;
