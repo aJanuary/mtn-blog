@@ -24,7 +24,7 @@ Contrast that with Facebook, which allows you to say "I like this". The purpose 
 
 Maybe it wasn't Facebooks intent for the feature to be used to increase the visibility of posts, but it's certainly being used that way. And it leads to odd scenarios like
 
-<img src="http://www.morethannothing.co.uk/wp-content/uploads/2010/01/Screen-shot-2010-01-26-at-04.14.24.png" alt="" title="'My cat just died :(' - 3 people liked this." class="alignnone size-full wp-image-186" />
+!['My cat just died :(' - 3 people liked this]({{ site.mediaurl }}/images/Screen-shot-2010-01-26-at-04.14.24.png)
 
 Of course, knowing whether someone liked something on Facebook because of the content or its importance is largely inconsequential, and indeed mostly self-evident by looking at the post (assuming you only know nice people who wouldn't like bad things).
 

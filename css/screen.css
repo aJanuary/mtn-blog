@@ -81,3 +81,7 @@ article h1 {
 article header p {
 	margin-bottom: 0;
 }
+
+img {
+	max-width: 100%;
+}

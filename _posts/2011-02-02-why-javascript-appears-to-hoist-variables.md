@@ -51,7 +51,7 @@ Whenever a variable is referenced, it is looked up in the current scope. If it i
 
 If we look at the first example again with our new found knowledge of how scoping works, we can see exactly why the first reference to "i" in "foo" is undefined.
 
-<img src="http://www.morethannothing.co.uk/wp-content/uploads/2011/02/static_scope.png" title="Static Scope" width="361" height="204" class="alignnone size-full wp-image-250" />
+![Static scope]({{ site.mediaurl}}/images/static_scope.png)
 
 Within a given scope, all variable references using the same variable name refer to the same variable.
 

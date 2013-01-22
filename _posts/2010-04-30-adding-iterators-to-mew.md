@@ -34,12 +34,12 @@ Iterators are a very powerful concept, and I thought it would be a shame for mew
 
 Mew uses the concept of cons lists for its current collections: a list is a series of cells, each containing a value and a tail (itself a list).
 
-<img src="http://www.morethannothing.co.uk/wp-content/uploads/2010/04/conslist.png" alt="" title="A Cons List" width="149" height="26" class="alignnone size-full wp-image-206" />
+![A const list]({{ site.mediaurl }}/images/conslist.png)
     
 We can use a similar concept to implement our iterator. Each cell would contain a value, and a tail. However, we need the iterator to be lazy, so each cell is wrapped in a thunk which, when evaluated, will generate the actual cell. This way the value of a cell isn't generated until the thunk is evaluated.
 
-<img src="http://www.morethannothing.co.uk/wp-content/uploads/2010/04/iterator.png" alt="" title="An Iterator" width="166" height="36" class="alignnone size-full wp-image-207" />
-    
+![An iterator]({{ site.mediaurl }}/images/iterator.png)
+
 This very simple model allows us to create, process and consume iterators. We can, in fact, achieve all of this in mew today.
 
     def to-list @{ iterator :
