@@ -12,6 +12,7 @@ kramdown:
   use_coderay: true
 
 title: More Than Nothing
+description: The blog of Andrew January
 author:
   name: Andrew January
   email: andrewjanuary@gmail.com
