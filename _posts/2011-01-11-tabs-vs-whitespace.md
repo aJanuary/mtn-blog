@@ -18,6 +18,7 @@ The advantage of tabs is that it avoids another of the religious programming war
 
 The big disadvantage of tabs, which is the problem that spaces solve, is alignment with non whitespace. Take, for example, the following bit of code:
 
+{:lang="java"}
 	public void Foo() {
         DoSomething(a, b, c
         	        e, f, g);
@@ -25,6 +26,7 @@ The big disadvantage of tabs, which is the problem that spaces solve, is alignme
 
 In my editor, where the tab width is 4, everything lines up nicely. But what about my team mate who uses, *spits on the ground* 8?
 
+{:lang="java"}
 	public void Foo() {
     	DoSomething(a, b, c
                                     e, f, g);
@@ -34,6 +36,7 @@ The prettiness is starting to unwind. This is the big reason why many people adv
 
 But there is a way of getting the best of both worlds. If indentation is done using tabs, but lining whitespace is done using spaces then people get to choose how much things are indented, but things still line up just fine.
 
+{:lang="java"}
     public void Foo() {
         DoSomething(a, b, c
                     e, f, g);

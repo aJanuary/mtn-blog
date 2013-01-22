@@ -13,6 +13,7 @@ Disclaimer: The following post is all speculation. None of it will necessarily g
 
 If you look at lots of the big, modern programming languages (C#, VB.Net, Python, Java, Ruby, Scala, Objective-C and many, many more) one feature they all have in common is some sort of iterator - the ability to iterate over items in a collection without needing to manually index into the collection.
 
+{:lang="python"}
     for item in collection:
       print(item)
         
@@ -20,11 +21,13 @@ This has many advantages over traditional for loops, and not just a cleaner synt
 
 The items don't even need to be known when the object is created: the interface to iterators usually supports lazy collections.
 
+{:lang="c"}
     object Current;
     void MoveNext();
     
 This means you could have an iterator which fetches items from a database. If you never use the 100th item, it never fetches it. You can also represent infinite sequences without the process locking up when you create them. Consider an iterator which represents an infinite series of positive integers, you could then number every item in another collection by simply zipping them together.
 
+{:lang="python"}
     indexed = zip(positive_integers, collection)
     
 Iterators are a very powerful concept, and I thought it would be a shame for mew to miss out. Here are my current ideas about how it might be implemented.

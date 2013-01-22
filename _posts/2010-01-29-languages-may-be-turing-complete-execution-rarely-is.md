@@ -14,6 +14,7 @@ Just because a language is Turing Complete, it doesn't necessarily mean that the
 
 Take, for example, the problem of adding natural numbers in C. Cs built-in data types aren't capable of storing all natural numbers, so we'll have to come up with our own encoding. We'll pick a simple encoding to be representative - a natural number is encoded as a null terminated linked list, with the length of the list being the number it represents. We can then add them together by creating a new linked list which is as long as the length of both of them added.
 
+{:lang="c"}
     #include <stdlib.h>
     #include <stdio.h>
 
@@ -83,7 +84,7 @@ Take, for example, the problem of adding natural numbers in C. Cs built-in data 
         printf("%ld\n", decode(result));
 
         return 0;
-    }</pre>
+    }
 
 We've defined some convenience methods to convert to and from longs, but we needn't necessarily use them &mdash; we could manually build a really long list. If you run the code it should print out the expected value, 15.
 

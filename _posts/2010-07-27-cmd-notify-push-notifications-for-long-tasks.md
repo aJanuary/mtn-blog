@@ -17,6 +17,7 @@ I found myself wishing there was a way for the computer to notify me that it was
 
 To this end, I wrote the following little python script, which uses [notifo](http://http://notifo.com/) to send you a push message on your iPhone when a command has finished executing.
 
+{:lang="python"}
     #!/usr/bin/env python
 
     from notifo import Notifo

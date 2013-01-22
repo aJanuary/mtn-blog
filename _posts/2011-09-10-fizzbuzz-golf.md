@@ -14,6 +14,7 @@ meta:
 ---
 Someone linked to [http://golf.shinh.org/p.rb?FizzBuzz](http://golf.shinh.org/p.rb?FizzBuzz) today and I couldn't help but have a go. Currently I'm ranked 20 in the C# solutions, but I just can't seem to shave off those last few characters. (The following code is obviously unminified)
 
+{:lang="java"}
 	class X {
 		static void Main() {
 			for (int i=0; i<100;) {
@@ -25,6 +26,7 @@ Someone linked to [http://golf.shinh.org/p.rb?FizzBuzz](http://golf.shinh.org/p.
 
 While googling around for inspiration on other possible angles to attack the problem I saw many so-called "good" and "simple" solutions, all of which looked far too complicated to me. So here's what I think a good solution looks like.
 
+{:lang="java"}
 	using System;
 
 	static class FizzBuzz {

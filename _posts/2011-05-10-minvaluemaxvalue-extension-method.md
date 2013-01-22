@@ -20,6 +20,7 @@ I've only given the implementations that use a projection to int to pick the max
 
 It's all pretty simple stuff - it's just remembering to start with the first value that could possibly trip you up.
 
+{:lang="java"}
     public static int MaxItem(this IEnumerable<int> list) {
         return MaxItem(list, x => x);
     }
@@ -78,7 +79,7 @@ It's all pretty simple stuff - it's just remembering to start with the first val
     }
 
 
-
+{:lang="java"}
     public static IEnumerable<int> MaxItems(this IEnumerable<int> list) {
         return MaxItems(list, x => x);
     }
@@ -110,7 +111,7 @@ It's all pretty simple stuff - it's just remembering to start with the first val
     }
 
 
-
+{:lang="java"}
     public static IEnumerable<int> MinItems(this IEnumerable<int> list) {
         return MinItems(list, x => x);
     }

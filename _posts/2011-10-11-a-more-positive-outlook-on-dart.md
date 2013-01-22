@@ -40,11 +40,13 @@ A lot of people seem to be confused by the type system in Dart. I personally thi
 
 At its core, the language is dynamically typed. That means you can do things like assigning values of different types to the same variable.
 
+{:lang="java"}
 	var a = 10;
 	a = "foo";
 
 It *isn't* untyped, which means the type of the value still defines what operations can be performed on it. For example, you can't add together two instances of MyClass without defining the add operator on them. At compile time you'll get a 'MyClass has no method named "operator+"' warning, and at runtime you'll get an 'NoSuchMethodException - receiver: '' function name: 'ADD$operator' arguments: []]' error.
 
+{:lang="java"}
 	class MyClass { }
 	main() {
 		new MyClass() + new MyClass();
@@ -52,6 +54,7 @@ It *isn't* untyped, which means the type of the value still defines what operati
 
 You have all the same runtime assurances you do in other dynamic languages like Python, but with the ability to optionally specify type annotations.
 
+{:lang="java"}
 	int a = 10;
 	a = "foo";
 
@@ -61,6 +64,7 @@ Designing an optional type system has some interesting implacations, the biggest
 
 All it means is that if you took the type annotations away, or added them where they previously were not, your program shouldn't then do something different. This procludes certain language features, or anti-features as some may designate them. For example, you cannot have method overloading, because as soon as you remove the types, or if you add a type to an existing argument, the program would behave differently.
 
+{:lang="java"}
 	void foo(int a) {
 	    print(a * 2);
 	}

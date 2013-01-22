@@ -12,6 +12,7 @@ A while back I wrote a post on what I called a [Stream Data Structure](http://ww
 
 While it works well, I've never been particularly happy with all of the code, more specifically the use of two loop variables in GetEnumerator. Today I managed to do a simple refactoring to hopefully make the logic simpler.
 
+{:lang="java"}
     private class StreamBuffer<T> : IEnumerable<T>
     {
         private int head = 0;

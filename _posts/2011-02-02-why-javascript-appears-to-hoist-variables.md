@@ -12,6 +12,7 @@ meta:
 ---
 JavaScript can appear to do odd things if you're not familiar with it's scoping rules. Take the following as an example.
 
+{:lang="javascript"}
     var i = 0
 
     function foo() {
@@ -22,11 +23,13 @@ JavaScript can appear to do odd things if you're not familiar with it's scoping 
 
 If you've not come across this specific example before, you might be surprised by the result:
 
+{:lang="javascript"}
     undefined
     1
 
 Searching on the Internet, you can find plenty of explanations of this *variable hoisting* behaviour. Most liken it to the following example:
 
+{:lang="javascript"}
     var i = 0
 
     function foo() {
@@ -56,6 +59,7 @@ But why is this such a problem? If you are given a program and told it is semant
 
 If you had the following fragment of a semantically correct c# program, you would be able to say that at line 4, it will print 10.
 
+{:lang="javascript"}
     int i = 10;
 
     void Foo() {
@@ -65,6 +69,7 @@ If you had the following fragment of a semantically correct c# program, you woul
 
 But given this same semantically correct JavaScript fragment, you cannot say at line 4 what it will print without first reading the rest of the scope to see if it is referring to the local scope, or some parent scope.
 
+{:lang="javascript"}
     var i = 10
 
     function foo() {
