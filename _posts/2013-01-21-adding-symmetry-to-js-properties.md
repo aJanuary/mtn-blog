@@ -4,6 +4,7 @@ title: Adding Symmetry to Javascript Properties
 status: publish
 type: post
 published: true
+stub: A common way to implement properties in Javascript is to use a single function that takes either zero or one arguments. `obj.foo(10)` sets a value and `obj.foo()` gets a value. But how does jQuery's implementation lose symmetry and how could it be fixed?
 ---
 A common way to implement properties in Javascript is to use a single function that takes either zero or one arguments. If there are no arguments, it's a getter, if there is one, its a setter. The getter returns the object itself, which lets you chain a bunch of setters together to avoid writing the variable name again and again.
 

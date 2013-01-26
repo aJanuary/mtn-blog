@@ -2,7 +2,7 @@ module Jekyll
   module StubFilter
     def stub(input)
       if input.has_key? 'stub'
-        input['stub']
+        '<p>' + input['stub'] + '</p>'
       else
         input['content'].split("\n")[0]
       end
