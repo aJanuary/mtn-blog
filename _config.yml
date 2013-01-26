@@ -21,3 +21,5 @@ author:
 
 url: http://www.morethannothing.co.uk
 mediaurl: http://mtn-blog.s3.amazonaws.com
+
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'Procfile']
