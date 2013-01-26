@@ -20,4 +20,4 @@ To this end, I decided to do a quick rewrite of my script. It now uses a placeho
 
 So if the user is using a modern browser they will get the same placeholder text behaviour they have all over the web and even all over their OS. If they don't, then they get the same old behaviour as before. It's win, win.
 
-You can find the new script [here](http://www.morethannothing.co.uk/wp-content/uploads/2010/01/placeholder.js).
+You can find the new script [here]({{ site.mediaurl }}/uploads/placeholder.js).
